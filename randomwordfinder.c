@@ -29,13 +29,14 @@ int main (void){
         {"failure"},
         {"terrible"},
         {"whooped"},
+        {"poopybuttface"}
  };
 
     //array to store users guess (must be lowercase chars)
     char userGuess[maxguess+1];
 
     //array to store hidden random word 
-    char hiddenWord[wordlength+60];
+    char hiddenWord[wordlength+59];
 
     //filling user hidden random word with random lowercase letters
     srand(time(NULL)); 
@@ -50,7 +51,7 @@ int main (void){
     int randind = rand()%60; 
 
     //choosing random word, and putting it into array
-    char *randword = words[rand()%15];
+    char *randword = words[rand()%16];
     int len = strlen(randword); 
     
     for (int count=0; count<len; count++){
@@ -66,7 +67,7 @@ int main (void){
         //displays array to user, and asks them to input their guess word
     printf("%s \n" , hiddenWord);
 
-    printf("Please insert your guess (it must be a lowercase alphanumeric symbol)\n");
+    printf("Please insert your guess (it must be a lowercase letter)\n");
     scanf("%200s", userGuess); 
 
     //tells user if their guess is valid or not
