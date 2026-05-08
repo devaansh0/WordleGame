@@ -34,7 +34,16 @@ int main (void){
                         "drown",
                         "mouse",
                         "house",
-                        "frown"
+                        "frown",
+                        "trail",
+                        "devvy",
+                        "water",
+                        "crazy",
+                        "hiker",
+                        "biker",
+                        "throw",
+                        "power",
+                        "chord",
     }; 
 
     //array to store user guess
